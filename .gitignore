@@ -1,0 +1,41 @@
+#--------------------------------------------------------------------
+# ENVIRONMENT CONFIGURATION (PENTING: Jangan Upload Password!)
+#--------------------------------------------------------------------
+.env
+.env.boot
+.env.test
+
+#--------------------------------------------------------------------
+# VENDOR (PENTING: Folder ini berat, nanti install via composer saja)
+#--------------------------------------------------------------------
+/vendor
+
+#--------------------------------------------------------------------
+# WRITABLE DIRECTORY (Isi Cache, Logs, Session gak usah diupload)
+#--------------------------------------------------------------------
+/writable/cache/*
+/writable/logs/*
+/writable/session/*
+/writable/uploads/*
+/writable/debugbar/*
+
+# TAPI: Pertahankan struktur foldernya (jangan hapus file index/htaccess)
+!/writable/**/*.index.html
+!/writable/.htaccess
+
+#--------------------------------------------------------------------
+# TESTING & DEBUGGING
+#--------------------------------------------------------------------
+/tests/_support/_generated
+/builds
+/phpunit.xml
+
+#--------------------------------------------------------------------
+# IDE / EDITOR SETTINGS (Settingan VS Code/Laptop kamu)
+#--------------------------------------------------------------------
+.idea
+.vscode
+*.sublime-workspace
+*.sublime-project
+.DS_Store
+Thumbs.db
